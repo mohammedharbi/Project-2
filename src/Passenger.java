@@ -3,13 +3,13 @@ public abstract class Passenger {
     private String name;
     private int ID;
     Car reserved_Car;
-    double trip_price;
+    double trip_cost;
 
-    public Passenger(String name, int ID, Car reserved_Car, double trip_price) {
+    public Passenger(String name, int ID, Car reserved_Car) {
         this.name = name;
         this.ID = ID;
         this.reserved_Car = reserved_Car;
-        this.trip_price = trip_price;
+
     }
 
     public String getName() {
@@ -37,11 +37,11 @@ public abstract class Passenger {
     }
 
     public double getTrip_price() {
-        return trip_price;
+        return trip_cost;
     }
 
     public void setTrip_price(double trip_price) {
-        this.trip_price = trip_price;
+        this.trip_cost = trip_cost;
     }
 
     public abstract double reserveCar(Car reserved_Car);

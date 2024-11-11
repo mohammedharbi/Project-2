@@ -2,8 +2,8 @@ public class nonSubscribersPassengers extends Passenger{
 
     private boolean discount_coupon;
 
-    public nonSubscribersPassengers(String name, int ID, Car reserved_Car, double trip_price, boolean discount_coupon) {
-        super(name, ID, reserved_Car, trip_price);
+    public nonSubscribersPassengers(String name, int ID, Car reserved_Car, boolean discount_coupon) {
+        super(name, ID, reserved_Car);
         this.discount_coupon= discount_coupon;
     }
 
@@ -33,7 +33,7 @@ public class nonSubscribersPassengers extends Passenger{
             }
         } catch (Exception e) {
             System.out.println("Maximum car capacity equals 0 Cannot register!!");
-            throw new RuntimeException(e);
+            return 0;
         }
         }
 

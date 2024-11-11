@@ -3,8 +3,8 @@ import java.nio.file.AccessDeniedException;
 public class Subscribers_passengers extends Passenger{
 
 
-    public Subscribers_passengers(String name, int ID, Car reserved_Car, double trip_price) {
-        super(name, ID, reserved_Car, trip_price);
+    public Subscribers_passengers(String name, int ID, Car reserved_Car) {
+        super(name, ID, reserved_Car);
     }
 
     @Override
@@ -18,7 +18,7 @@ public class Subscribers_passengers extends Passenger{
             return trip_cost;}
         } catch (Exception e) {
             System.out.println("Maximum car capacity equals 0 Cannot register!!");
-            throw new RuntimeException(e);
+            return 0;
         }
     }
     @Override

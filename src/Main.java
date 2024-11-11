@@ -20,10 +20,11 @@ public class Main {
         //2.1• Create an array of Passengers containing 1 Subscriber and 1 non-Subscriber.
         //2.2 Assign a different car object to each passenger and then display their
         //information.
-        Passenger p = new Subscribers_passengers("Mohammed", 233132132,c,15);
-        //Passenger p2 = new nonSubscribersPassengers("Khaled", 20303244,c,20,true);
-        Passenger p3 = new nonSubscribersPassengers("Fahad", 24343443,c2,10,false);
+        Passenger p = new Subscribers_passengers("Mohammed", 233132132,c);
+        Passenger p2 = new nonSubscribersPassengers("Khaled", 20303244,c,true);
+        Passenger p3 = new nonSubscribersPassengers("Fahad", 24343443,c2,false);
         passengers.add(p);
+        passengers.add(p2);
         passengers.add(p3);
         //2.1 done.
 
