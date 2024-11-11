@@ -28,7 +28,7 @@ public class Subscribers_passengers extends Passenger{
                 "Car Code: "+reserved_Car.getCode()+"\n"+
                 "Pick-up Destination: "+reserved_Car.route.getPickup_address()+"\n"+
                 "Final Destination: "+reserved_Car.route.getDestination_address()+"\n"+
-                "Trip cost:"+reserveCar(reserved_Car));
+                "Trip cost: "+reserveCar(reserved_Car));
         System.out.println("---------------------");
     }
 }
